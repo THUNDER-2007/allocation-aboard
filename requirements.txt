@@ -1,5 +1,4 @@
 Flask
-mysql-connector-python
-python-dotenv
+psycopg2-binary
 Werkzeug
 gunicorn
