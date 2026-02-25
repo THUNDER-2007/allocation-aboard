@@ -1,29 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Secure Portal</title>
+    <title>Secure Login</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 
-<div class="background-animation"></div>
-
-<div class="login-card">
-    <h1>🔐 Secure Login</h1>
-    <p class="subtitle">Authorized Personnel Only</p>
+<div class="login-box">
+    <h2>🔐 Secure Portal</h2>
 
     <form method="POST" action="/login">
-
-        <div class="input-box">
-            <input type="text" name="username" required>
-            <label>Username</label>
-        </div>
-
-        <div class="input-box">
-            <input type="password" name="password" required>
-            <label>Password</label>
-        </div>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
 
         <!-- Honeypot -->
         <input type="text" name="hidden_field" style="display:none">
